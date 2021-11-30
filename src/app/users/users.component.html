@@ -1,0 +1,19 @@
+<table class="table table-dark" style="width: 50%; margin-left: 20%;margin-top: 30px;">
+    <thead>
+      <tr>
+        <th scope="col">Login</th>
+        <th scope="col">Email</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr *ngFor="let user of users">
+        <td> {{user.login}} </td>
+    
+        <td> {{user.email}} </td>
+
+      </tr>
+
+    </tbody>
+  </table>  
+  <button type="button" (click)="openDialog()" style="margin-left: 20%;" class="btn btn-success">Add User</button>
